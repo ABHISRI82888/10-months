@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10060b">
+
+<title>For Vishiiiiii ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #10060b;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ---------- BACKGROUND ---------- */
+
+.background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.glow {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    filter: blur(110px);
+    opacity: .16;
+}
+
+.glow1 {
+    background: #ff3975;
+    top: -150px;
+    left: -120px;
+}
+
+.glow2 {
+    background: #a52cff;
+    bottom: -150px;
+    right: -120px;
+}
+
+/* ---------- FLOATING HEARTS ---------- */
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    pointer-events: none;
+    z-index: 0;
+    animation: floatHeart linear forwards;
+    opacity: 0;
+}
+
+@keyframes floatHeart {
+
+    0% {
+        transform: translateY(0) scale(.6) rotate(0);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .7;
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(1.2) rotate(30deg);
+        opacity: 0;
+    }
+}
+
+/* ---------- GENERAL ---------- */
+
+section {
+    position: relative;
+    z-index: 1;
+    padding: 90px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(38px, 9vw, 58px);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.title span {
+    color: #ff668f;
+}
+
+.divider {
+    width: 70px;
+    height: 1px;
+    background: #ff668f;
+    margin: 25px auto;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 61, 113, .16),
+            transparent 50%
+        );
+}
+
+.hero-content {
+    animation: fadeUp 1.5s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.eyebrow {
+    color: #ff91b1;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 28px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(62px, 17vw, 135px);
+    font-weight: 400;
+    line-height: .85;
+}
+
+.hero h1 span {
+    color: #ff668f;
+}
+
+.hero-subtitle {
+    max-width: 580px;
+    margin: 35px auto 0;
+    color: #d6bec6;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.start-date {
+    margin-top: 40px;
+    color: #ff91b1;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+}
+
+.start-date small {
+    display: block;
+    margin-top: 8px;
+    color: #80656e;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.scroll {
+    margin-top: 65px;
+    color: #80656e;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.scroll span {
+    display: block;
+    margin-top: 12px;
+    font-size: 20px;
+    animation: bounce 1.7s infinite;
+}
+
+@keyframes bounce {
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+/* ---------- 10 MONTHS ---------- */
+
+.months {
+    text-align: center;
+}
+
+.big-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(140px, 38vw, 270px);
+    line-height: .7;
+    color: #ff668f;
+    text-shadow: 0 0 70px rgba(255, 85, 130, .2);
+}
+
+.month-label {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(30px, 8vw, 55px);
+    margin-top: 45px;
+}
+
+.month-text {
+    max-width: 620px;
+    margin: 25px auto;
+    color: #c7afb8;
+    line-height: 1.9;
+}
+
+/* ---------- LOVE LETTER ---------- */
+
+.letter {
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 28px;
+    padding: clamp(25px, 6vw, 55px);
+    box-shadow: 0 30px 100px rgba(0,0,0,.3);
+}
+
+.letter-opening {
+    color: #ff91b1;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    color: #dec9d0;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.letter p + p {
+    margin-top: 18px;
+}
+
+.signature {
+    margin-top: 35px;
+    color: #ff91b1;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 21px;
+}
+
+/* ---------- MEMORIES ---------- */
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.memory {
+    min-height: 220px;
+    padding: 28px;
+    border-radius: 25px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 91, 135, .12),
+            rgba(255,255,255,.025)
+        );
+
+    border: 1px solid rgba(255,255,255,.08);
+    transition: .4s;
+}
+
+.memory:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,102,143,.5);
+}
+
+.memory-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.memory h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.memory p {
+    color: #bca6ae;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* ---------- 10 THINGS ---------- */
+
+.things {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.thing {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 17px;
+    border-radius: 16px;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.06);
+}
+
+.num {
+    min-width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ff668f;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.thing p {
+    color: #dbc6cd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ---------- PERSONAL NOTE ---------- */
+
+.note-section {
+    text-align: center;
+}
+
+.note {
+    max-width: 750px;
+    margin: auto;
+    padding: 55px 25px;
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,65,110,.15),
+            rgba(110,25,65,.08)
+        );
+
+    border: 1px solid rgba(255,102,143,.18);
+}
+
+.note-heart {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.note p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(24px, 6vw, 38px);
+    line-height: 1.5;
+    color: #f2dce3;
+}
+
+.note span {
+    color: #ff668f;
+}
+
+.note-small {
+    margin-top: 20px;
+    color: #bfa8b0;
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 16px !important;
+}
+
+/* ---------- SECRET ---------- */
+
+.secret {
+    text-align: center;
+}
+
+.secret-box {
+    padding: 55px 25px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.secret-box p {
+    color: #bfa8b0;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: #ff668f;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+
+    box-shadow: 0 12px 35px rgba(255,65,110,.25);
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#hiddenMessage {
+    display: none;
+    margin-top: 35px;
+    animation: fadeUp .8s ease;
+}
+
+#hiddenMessage h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    color: #ff91b1;
+    font-size: clamp(27px, 7vw, 45px);
+    line-height: 1.4;
+}
+
+/* ---------- FINAL ---------- */
+
+.final {
+    min-height: 90svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,65,110,.2),
+            transparent 55%
+        );
+}
+
+.final-heart {
+    font-size: 58px;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.15);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.1);
+    }
+}
+
+.final h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(50px, 13vw, 100px);
+    font-weight: 400;
+    line-height: .9;
+    margin-top: 25px;
+}
+
+.final h2 span {
+    color: #ff668f;
+}
+
+.final p {
+    max-width: 600px;
+    margin: 30px auto 0;
+    color: #c8b0b9;
+    line-height: 1.8;
+}
+
+.final-date {
+    margin-top: 40px;
+    color: #ff91b1;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    position: relative;
+    z-index: 1;
+    background: #080306;
+    color: #6d545d;
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 11px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 75px 18px;
+    }
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .memory {
+        min-height: 180px;
+    }
+
+    .letter {
+        padding: 25px;
+    }
+
+    .letter p {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: clamp(58px, 17vw, 100px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="background">
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+</div>
+
+
+<!-- =========================
+     OPENING
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            A little something for
+        </div>
+
+        <h1>
+            For<br>
+            <span>Vishiiiiii.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            It all began on one ordinary day...
+            <br>
+            and somehow became one of the most beautiful
+            chapters of my life.
+        </p>
+
+        <div class="start-date">
+
+            23 November 2025
+
+            <small>
+                the day our story began
+            </small>
+
+        </div>
+
+        <div class="scroll">
+            KEEP GOING
+            <span>↓</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     10 MONTHS
+========================= -->
+
+<section class="months">
+
+    <div class="container">
+
+        <div class="big-number">
+            10
+        </div>
+
+        <div class="month-label">
+            months of
+            <span style="color:#ff668f;">
+                us.
+            </span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="month-text">
+            Ten months sounds like just a number.
+            But to me, it means countless conversations,
+            endless laughs, unexpected memories,
+            little moments and a story that became ours.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOVE LETTER
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <h2 class="title">
+            A letter
+            <span>for you</span>
+        </h2>
+
+        <div class="letter">
+
+            <div class="letter-opening">
+                Dear Vishiiiiii,
+            </div>
+
+            <p>
+                I don't think there is one perfect way to explain
+                what you mean to me.
+            </p>
+
+            <p>
+                Somehow, over these ten months, you became such
+                an important part of my life that it is hard to
+                imagine these days without you in them.
+            </p>
+
+            <p>
+                We've laughed, talked about the most random things,
+                made memories, had our little moments and probably
+                annoyed each other more than we'd like to admit.
+            </p>
+
+            <p>
+                But that's what makes this ours.
+                It doesn't have to be perfect to be special.
+            </p>
+
+            <p>
+                Thank you for every smile, every conversation,
+                every memory and every little moment that
+                I'll probably remember for much longer than
+                you realise.
+            </p>
+
+            <p>
+                These ten months are only one chapter.
+                I hope there are many more pages waiting for us.
+            </p>
+
+            <div class="signature">
+                Happy 10th Month Anniversary,
+                Vishiiiiii. ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MEMORIES
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <h2 class="title">
+            Our little
+            <span>world</span>
+        </h2>
+
+        <div class="memory-grid">
+
+            <div class="memory">
+
+                <div class="memory-icon">
+                    🌙
+                </div>
+
+                <h3>
+                    Our Conversations
+                </h3>
+
+                <p>
+                    From deep conversations to completely
+                    pointless ones — somehow I never get tired
+                    of talking to you.
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <div class="memory-icon">
+                    😂
+                </div>
+
+                <h3>
+                    Our Laughs
+                </h3>
+
+                <p>
+                    The kind of laughter where we forget
+                    what we were even laughing about.
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <div class="memory-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    The Little Things
+                </h3>
+
+                <p>
+                    The tiny moments that seemed ordinary
+                    but somehow became my favourite memories.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     10 LITTLE THINGS
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <h2 class="title">
+            10 little things I
+            <span>love</span>
+        </h2>
+
+        <div class="things">
+
+            <div class="thing">
+                <div class="num">1</div>
+                <p>
+                    The way you make ordinary days feel special.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">2</div>
+                <p>
+                    The random conversations that I never want to end.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">3</div>
+                <p>
+                    The memories we've created together.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">4</div>
+                <p>
+                    The way you can make me smile without trying.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">5</div>
+                <p>
+                    The laughter that comes from absolutely nothing.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">6</div>
+                <p>
+                    The comfort of knowing you're there.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">7</div>
+                <p>
+                    The little moments you probably don't even remember.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">8</div>
+                <p>
+                    The fact that you became one of my favourite people.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">9</div>
+                <p>
+                    Everything that makes our story uniquely ours.
+                </p>
+            </div>
+
+            <div class="thing">
+                <div class="num">10</div>
+                <p>
+                    And simply... you. ❤️
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PERSONAL NOTE
+========================= -->
+
+<section class="note-section">
+
+    <div class="container">
+
+        <div class="note">
+
+            <div class="note-heart">
+                ❤️
+            </div>
+
+            <p>
+                Even when we argue,
+                even when things aren't perfect,
+                <span>
+                    I'll always be there for you.
+                </span>
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="note-small">
+                Through every little disagreement,
+                every difficult day and every beautiful moment,
+                I'll keep choosing to be by your side.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SECRET MESSAGE
+========================= -->
+
+<section class="secret">
+
+    <div class="container">
+
+        <div class="secret-box">
+
+            <h2 class="title">
+                One last
+                <span>thing...</span>
+            </h2>
+
+            <p>
+                You made it all the way here.
+                So here's one last little surprise.
+            </p>
+
+            <button onclick="revealMessage()">
+                Open this ❤️
+            </button>
+
+            <div id="hiddenMessage">
+
+                <h3>
+                    If I had to choose again,
+                    I'd still choose you.
+                    ❤️
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+    <div class="container">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <h2>
+            I love<br>
+            <span>you, Vishiiiiii.</span>
+        </h2>
+
+        <p>
+            Ten months down.
+            Countless memories made.
+            And so many more moments waiting
+            to become ours.
+        </p>
+
+        <div class="final-date">
+            23 November 2025
+            •
+            10 months
+            •
+            us
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    Made especially for Vishiiiiii ❤️
+</footer>
+
+
+<script>
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+const symbols = [
+    "♥",
+    "♡",
+    "❤",
+    "💗",
+    "✨"
+];
+
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML =
+        symbols[
+            Math.floor(
+                Math.random() * symbols.length
+            )
+        ];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (10 + Math.random() * 20) + "px";
+
+    heart.style.color =
+        Math.random() > .3
+        ? "#ff668f"
+        : "#ff9fbc";
+
+    heart.style.animationDuration =
+        (6 + Math.random() * 8) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 15000);
+}
+
+setInterval(createHeart, 600);
+
+
+/* =========================
+   SECRET MESSAGE
+========================= */
+
+function revealMessage() {
+
+    const message =
+        document.getElementById(
+            "hiddenMessage"
+        );
+
+    message.style.display = "block";
+
+    for (let i = 0; i < 30; i++) {
+
+        setTimeout(() => {
+            createHeart();
+        }, i * 80);
+
+    }
+}
+
+</script>
+
+</body>
+</html>
